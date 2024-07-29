@@ -9,17 +9,75 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">chrometest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">65,054</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">seleniumtest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">74,433</td><td></td><td></td></tr>
-<tr><td><a href="#t2">firefoxtest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">97,954</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">237,441</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">seleniumtest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">91,798</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">firefoxtest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">158,752</td><td></td><td></td></tr>
+<tr><td><a href="#t2">chrometest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">254,160</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">504,710</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">chrometest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.amazon.amazontest</td><td><a href="#m0">crossBrowseTest</a></td><td rowspan="1">1722176643934</td><td rowspan="1">64925</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">seleniumtest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.amazon.amazontest</td><td><a href="#m1">crossBrowseTest</a></td><td rowspan="1">1722176643934</td><td rowspan="1">74332</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">firefoxtest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.amazon.amazontest</td><td><a href="#m2">crossBrowseTest</a></td><td rowspan="1">1722176643934</td><td rowspan="1">97853</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">seleniumtest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.amazon.amazontest</td><td><a href="#m0">crossBrowseTest</a></td><td rowspan="1">1722271069462</td><td rowspan="1">91667</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">firefoxtest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.amazon.amazontest</td><td><a href="#m1">crossBrowseTest</a></td><td rowspan="1">1722271069462</td><td rowspan="1">158656</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">chrometest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.amazon.amazontest</td><td><a href="#m2">crossBrowseTest</a></td><td rowspan="1">1722271069462</td><td rowspan="1">254051</td></tr></tbody>
 </table>
-<h2>chrometest</h2><h3 id="m0">com.amazon.amazontest#crossBrowseTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Chrome</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>seleniumtest</h2><h3 id="m1">com.amazon.amazontest#crossBrowseTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Edge</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>firefoxtest</h2><h3 id="m2">com.amazon.amazontest#crossBrowseTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>FireFox</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>seleniumtest</h2><h3 id="m0">com.amazon.amazontest#crossBrowseTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Edge</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn&apos;t exist 
+Host info: host: &apos;d822878b7685&apos;, ip: &apos;172.18.0.3&apos;
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.153.1-microsoft-standard-WSL2&apos;, java.version: &apos;17.0.11&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.153.1-microsoft-standard-WSL2&apos;, java.version: &apos;17.0.11&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.153.1-microsoft-standard-WSL2&apos;, java.version: &apos;17.0.11&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at com.amazon.amazontest.crossBrowseTest(amazontest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>firefoxtest</h2><h3 id="m1">com.amazon.amazontest#crossBrowseTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>FireFox</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>chrometest</h2><h3 id="m2">com.amazon.amazontest#crossBrowseTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [56383ee07f52987c78d0d650ed966e8b, get {url=https://www.amazon.in/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.5:4444/sessio..., se:cdpVersion: 126.0.6478.114, se:vnc: ws://172.18.0.5:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 56383ee07f52987c78d0d650ed966e8b
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:399)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:355)
+	at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.amazon.amazontest.crossBrowseTest(amazontest.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:382)
+	... 29 more
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -11,4 +11,14 @@
       </class> <!-- com.amazon.amazontest -->
     </classes>
   </test> <!-- seleniumtest(failed) -->
+  <test thread-count="5" parallel="tests" name="chrometest(failed)">
+    <parameter name="bname" value="Chrome"/>
+    <classes>
+      <class name="com.amazon.amazontest">
+        <methods>
+          <include name="crossBrowseTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.amazon.amazontest -->
+    </classes>
+  </test> <!-- chrometest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
